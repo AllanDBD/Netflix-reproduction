@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1196.0" prefWidth="1393.0" style="-fx-background-color: #1C1B1B;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.controller.MenuController">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1194.0" prefWidth="1376.0" style="-fx-background-color: #1C1B1B;">
+         <children>
+            <HBox fx:id="film1" alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="1375.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/netflix.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: black;" text="Accueil" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="109.0" style="-fx-background-color: black;" text="Séries" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="92.0" style="-fx-background-color: black;" text="Films" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: black;" text="Documentaires" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#profilButtonClick" prefHeight="52.0" prefWidth="227.0" style="-fx-background-color: black;" text="Changer de profil" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="270.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#compteButtonClick" prefHeight="52.0" prefWidth="126.0" style="-fx-background-color: black;" text="Compte" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="220.0" prefWidth="1362.0">
+               <children>
+                  <Button fx:id="serie1" alignment="CENTER" mnemonicParsing="false" onAction="#SerieButtonClick" prefHeight="187.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/BreakingBad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="serie2" alignment="CENTER" mnemonicParsing="false" onAction="#SerieButtonClick" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/GameOfThrones.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="serie3" alignment="CENTER" mnemonicParsing="false" onAction="#SerieButtonClick" prefHeight="183.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/PrisonBreak.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="film1" alignment="CENTER" mnemonicParsing="false" onAction="#FilmButtonClick" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/LeLoupDeWallStreet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="220.0" prefWidth="1362.0">
+               <children>
+                  <Button fx:id="serie4" alignment="CENTER" mnemonicParsing="false" onAction="#SerieButtonClick" prefHeight="187.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/LaCasaDePapel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="film2" alignment="CENTER" mnemonicParsing="false" onAction="#FilmButtonClick" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="181.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/ReadyPlayerOne.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="serie5" alignment="CENTER" mnemonicParsing="false" onAction="#SerieButtonClick" prefHeight="183.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/StrangerThings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="film3" alignment="CENTER" mnemonicParsing="false" onAction="#FilmButtonClick" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="183.0" fitWidth="321.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Oppenheimer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="220.0" prefWidth="1372.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="187.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/SpiderMan.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Vikings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/ForrestGump.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/TheRevenant.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="220.0" prefWidth="1362.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="187.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="180.0" fitWidth="316.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/PeakyBlinders.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="184.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Bridgerton.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Dahmer.jpeg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/MyName.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="222.0" prefWidth="1376.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="187.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="177.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Avatar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/LasChicasDelCable.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="183.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="191.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/LeJeuDeLaDame.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="184.0" prefWidth="336.0" style="-fx-background-color: #1C1B1B;">
+                     <graphic>
+                        <ImageView fitHeight="181.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/AmericanSniper.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

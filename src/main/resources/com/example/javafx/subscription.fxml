@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="849.0" prefWidth="1241.0" styleClass="HBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.controller.SubscriptionController">
+    <stylesheets>
+        <URL value="@background.css" />
+    </stylesheets>
+    <children>
+        <VBox alignment="CENTER" prefHeight="829.0" prefWidth="520.0">
+         <children>
+            <VBox alignment="TOP_CENTER" opacity="0.91" prefHeight="540.0" prefWidth="553.0" spacing="20.0" style="-fx-background-color: black; -fx-border-color: black;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="382.0" text="Choix de l'abonnement" textAlignment="CENTER" textFill="#ff2525">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="180.0" prefWidth="511.0" style="-fx-background-color: black;">
+                     <children>
+                        <ImageView fitHeight="104.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/head.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="77.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/2heads.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="121.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/4heads.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="103.0" prefWidth="511.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="131.0" prefWidth="148.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Un utilisateur simultané" textAlignment="CENTER" wrappingWidth="154.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="abo1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AboButtonClick" prefHeight="46.0" prefWidth="142.0" style="-fx-background-color: #ff2525; -fx-background-radius: 15px;" text="7.99€/mois" textAlignment="CENTER" textFill="#070000">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="115.0" prefWidth="201.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2) Deux utilisateurs simultanés" textAlignment="CENTER" wrappingWidth="197.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Text>
+                              <Button fx:id="abo2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AboButtonClick" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #ff2525; -fx-background-radius: 15px;" text="10.99€/mois" textAlignment="CENTER" textFill="#070000">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" text="3) Quatre utilisateurs simultanés" textAlignment="CENTER" wrappingWidth="187.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="abo3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AboButtonClick" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #ff2525; -fx-background-radius: 15px;" text="12.99€/mois" textAlignment="CENTER" textFill="#070000">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+        </VBox>
+    </children>
+</HBox>
